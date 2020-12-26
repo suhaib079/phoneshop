@@ -17,7 +17,14 @@
         <a href="#contact">Contact</a>
         <input type="text" placeholder="Search.." />
         <script>
-          var name = prompt("enter ur full name");
+          function requiredFunction() {
+  var answer = prompt('enter ur name');
+  if (answer == "") {
+    requiredFunction();
+  }
+}
+requiredFunction();
+
           var discount = prompt("enter ur discount code");
           document.write("<p>" + name + "</p>");
           var n = prompt("how many pic u want to see");
